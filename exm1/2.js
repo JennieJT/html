@@ -9,7 +9,9 @@
     f:["",""],
 
 }
-var  arr=["a","b",'c',"d"]
+//lalalalalalalalalalalalala
+/////////
+////good!!!!
 var  forc= function (params) {
    for(var i in params){
        var key=i
