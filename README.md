@@ -1,1 +1,1 @@
-This is Jingtian Wang's web devlopment project.
+This is Jingtian Wang's web development project.
