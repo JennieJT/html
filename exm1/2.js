@@ -1,4 +1,6 @@
  var firstObj={
+     //modified by wangyong in beijing 
+    
      //constructor:function(){},
     'a':{"aa":"aa"},
     "b":"bb",

@@ -1,5 +1,6 @@
 
    (function (){
+     //这是 github
     var s="hello"
     sss=''
     console.info(s)
