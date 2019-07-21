@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Jingtian's work</title>
+<style>
+    body{
+        background-color:thistle;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:bold;
+        text-shadow: 5px,5px,5px,white;
+        font-size:48px;
+    }
+
+
+.dialog-box{
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background: rgb(218, 148, 194);
+  border-radius: 25px;
+  top: 70%;
+  left: 45%;
+  margin: -100px 0 0 -150px;
+  box-shadow:10px 10px 5px grey;
+}
+
+.highlight{
+    position:absolute;
+    background: rgb(218, 148, 194);
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+
+}
+.dialog-word{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   
+}
+button{
+    border-radius: 25px;
+    background-color:rgba(202, 202, 198, 0.849); /* Green */
+    border: none;
+    color: rgb(158, 100, 100);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height:80px;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+
+</head>
+<body>
+        <div class="dialog-mask" style = "display: none">
+            <div class="dialog-box">
+                <p class="dialog-word"> This is a dialog-box</p>
+                <button  id="closebutton" type="button"  class="botton-word">close</button>         
+            </div>
+        </div>
+        <div class="highLight">
+        <h1>Test Dialog Box</h1> 
+        </div>
+        <button id="openbutton" type="button"  class="botton-word">pop up dialog box</button>
+        <script type="text/javascript" src="./requirejs/require.js"></script>
+        <script  type="text/javascript" src="../common/cls.js"></script>
+        
+        <script  type="text/javascript" src="2.js"></script><script   type="text/javascript" src="./1.js"></script>
+    </body>
+</html>
