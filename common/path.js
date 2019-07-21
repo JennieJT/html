@@ -1,3 +1,4 @@
+window.contextRoot=function(){}
 require.config(
     {
         baseUrl: '',
