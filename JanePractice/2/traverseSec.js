@@ -15,6 +15,7 @@ var treeItem={
 //   <meta> <style>   <a> <div> <div>...
 //
 //arraylist...
+
 var outcome=[];
 var traverse=function(root){
 if(root===null){
@@ -23,4 +24,7 @@ if(root===null){
 outcome.push(root);
 //对所有子元素做recursion
 
+for(var i=0;i<root.children.length;i++){
+    traverse(c);
+}
 }
