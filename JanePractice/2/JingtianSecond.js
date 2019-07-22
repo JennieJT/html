@@ -8,4 +8,4 @@
     document.write("<li>document.location.port: "+document.location.port+"</li>")
     document.write("<li>document.location.protocol: "+document.location.protocol+"</li>")
     document.write("</ul>")
-}())
+}()
