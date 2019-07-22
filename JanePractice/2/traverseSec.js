@@ -28,6 +28,7 @@ var traverse=function(theElement,treeItem){
 treeItem.id=theElement.id;
 treeItem.title=theElement.attributes["title"]
 treeItem.style=theElement.attributes["style"]
+treeItem.classes=[]
 var tmp=theElement.classList
 for(var i=0;i<tmp.length;i++){
   treeItem.classes.push(tmp[i])
@@ -41,7 +42,7 @@ if(children.length==0){
 }
 
 for(var i=0;i<children.length;i++){
-  var randomName={classes:[],children:[]}
+  var randomName={children:[]}
   traverse(children[i],randomName)
   treeItem.children.push(randomName)
 }

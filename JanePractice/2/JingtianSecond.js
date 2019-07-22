@@ -9,3 +9,10 @@
     document.write("<li>document.location.protocol: "+document.location.protocol+"</li>")
     document.write("</ul>")
 }())
+
+function goTop(){
+    if(document.location.hash==""){
+    var curURL=document.location.href;
+    document.location.href=curURL+"#top"
+    }
+}
