@@ -16,3 +16,16 @@ function goTop(){
     document.location.href=curURL+"#top"
     }
 }
+function windowCallBack(event){
+    if(event!=null){
+    var newh1=document.createElement("h3")
+    var newContent=document.createTextNode("The callback event is: "+ event.type)
+    newh1.appendChild(newContent);
+    var currentDiv=document.getElementById("problem4")
+    currentDiv.insertAdjacentElement("beforeend",newh1)
+    }
+}
+window.addEventListener("load",windowCallBack,false);
+window.addEventListener("hashchange",windowCallBack,false);
+window.addEventListener("beforeunload",windowCallBack,false);
+window.addEventListener("readystatechange",windowCallBack,false);
