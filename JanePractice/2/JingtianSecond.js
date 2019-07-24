@@ -55,14 +55,13 @@
             callbackT: function (e) {
 
                 call("grandpa", "true")
-                return false
+                
             }
         },
         papa: {
             name: "papa",
             callbackF: function (e) {
-                event.stopPropagation()
-                event.preventDefault()
+             
                 call("papa", "false")
             },
             callbackT: function (e) {
@@ -72,6 +71,11 @@
         girl: {
             name: "girl",
             callbackF: function (e) {
+
+                var evt = document.createEvent("HTMLEvents");
+                evt.initEvent('click',false,false)
+                var grandpa=document.querySelector('#grandpa')
+                grandpa.dispatchEvent(evt)
                 call("girl", "false")
             },
             callbackT: function (e) {
