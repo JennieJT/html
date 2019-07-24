@@ -31,61 +31,61 @@
     window.addEventListener("beforeunload", windowCallBack, false);
     window.addEventListener("readystatechange", windowCallBack, false);
 
-    var call=function(who,boo){
-        var newDiv=document.createElement("div")
-        var newText=document.createTextNode("click in "+ who+" is "+boo)
+    var call = function (who, boo) {
+        var newDiv = document.createElement("div")
+        var newText = document.createTextNode("click in " + who + " is " + boo)
         newDiv.appendChild(newText)
         document.getElementById("forPosi").appendChild(newDiv)
     }
-    var sss={}
-    sss.a="aa"
-    sss['a']="aa"
-    sss={
-        a:"aa"
+    var sss = {}
+    sss.a = "aa"
+    sss['a'] = "aa"
+    sss = {
+        a: "aa"
     }
-    var divs={
+    var divs = {
 
-        grandpa:{
-            name:"grandpa",
-            callbackF:function(e){
-                
-                call("grandpa","false")
-                
+        grandpa: {
+            name: "grandpa",
+            callbackF: function (e) {
+
+                call("grandpa", "false")
+
             },
-            callbackT:function(e){
-                
-                call("grandpa","true")
+            callbackT: function (e) {
+
+                call("grandpa", "true")
                 return false
             }
         },
-        papa:{
-            name:"papa",
-            callbackF:function(e){
+        papa: {
+            name: "papa",
+            callbackF: function (e) {
                 event.stopPropagation()
                 event.preventDefault()
-                call("papa","false")
+                call("papa", "false")
             },
-            callbackT:function(e){
-                call("papa","true")
+            callbackT: function (e) {
+                call("papa", "true")
             }
         },
-        girl:{
-            name:"girl",
-            callbackF:function(e){
-                call("girl","false")
+        girl: {
+            name: "girl",
+            callbackF: function (e) {
+                call("girl", "false")
             },
-            callbackT:function(e){
-                call("girl","true")
+            callbackT: function (e) {
+                call("girl", "true")
             }
         }
 
-        
+
     }
 
-    for(var key in divs){
-        var curId=document.getElementById(key)
-        curId.addEventListener("click",divs[key].callbackT,true)
-        curId.addEventListener("click",divs[key].callbackF,false)
+    for (var key in divs) {
+        var curId = document.getElementById(key)
+        curId.addEventListener("click", divs[key].callbackT, true)
+        curId.addEventListener("click", divs[key].callbackF, false)
     }
 
 }())
