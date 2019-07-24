@@ -17,6 +17,9 @@ var root={
 //arraylist...
 
 var outcome=[];
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var  eHtml=document.getElementsByTagName('html');
 /**
  * 
@@ -24,6 +27,18 @@ var  eHtml=document.getElementsByTagName('html');
  * @param {} treeItem 
  */
 var traverse=function(theElement,treeItem){
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+//var root={tagName:}
+var traverse=function(root){
+if(root===null){
+    return;
+}
+outcome.push(root);
+>>>>>>> Stashed changes
 //对所有子元素做recursion
 treeItem.id=theElement.id;
 treeItem.title=theElement.attributes["title"]
@@ -48,5 +63,17 @@ for(var i=0;i<children.length;i++){
 }
 
 }
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 traverse(eHtml[0],root);
+=======
+//print outcome.
+>>>>>>> Stashed changes
+=======
+//print outcome.
+>>>>>>> Stashed changes
+=======
+//print outcome.
+>>>>>>> Stashed changes
