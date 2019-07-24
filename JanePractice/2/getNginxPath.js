@@ -27,8 +27,10 @@
         return len;
     }
     var ans = path.substring(0, virtualPath(validSlash, path));
+    // from line 31 to line 33 is done by Jianghong Ying
     var ans2 = path.replace(deletePath,'');
     console.log(ans);
     console.log(ans2);
+    // this line below is done by Jingtian Wang
     document.write(ans);
 }())
