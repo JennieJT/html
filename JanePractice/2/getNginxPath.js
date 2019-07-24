@@ -27,5 +27,8 @@
         return len;
     }
     var ans = path.substring(0, virtualPath(validSlash, path));
+    var ans2 = path.replace(deletePath,'');
+    console.log(ans);
+    console.log(ans2);
     document.write(ans);
 }())
