@@ -1,22 +1,39 @@
-#fixed{
+body{
+    height:100%;
+}
+#top{
     background-color: aquamarine;
-    position:fixed;
+    position: relative;
     left:0%;
     right:0%;
     height:40px;
 }
 
 #full{
-    position: fixed;
-    top:50px;
-    height:calc(100% - 50px);
-    margin: 5px 0px 0px 0px;
+    position: relative;
+    height:calc(100% - 5px);
+    margin: 5px 5px 5px 5px;
     background-color: aqua;
 }
 
-#takePlace{
+#inside{
     position: relative;
     height:1000px;
     width:30px;
     border-color: bisque;
+}
+
+.row{
+    clear:both;
+    box-sizing:border-box;
+   
+}
+.col{
+    float:left;
+    width:calc(90% / 3);
+    margin:calc(5% / 3);
+    background-color: cyan;
+    border:5px white;
+    text-align: center;
+    height:5000px;
 }
