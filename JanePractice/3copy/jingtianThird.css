@@ -1,0 +1,49 @@
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+}
+
+#top{
+    background-color: aquamarine;
+    position: relative;
+    left:0%;
+    right:0%;
+    height:40px;
+}
+
+.row{
+    height:200px;
+    position:relative;
+    margin:10px;
+    top:300px;
+   
+}
+.col{
+    text-align: center;
+    height:5000px;
+}
+
+.right{
+    margin-left: 100px;
+    width:auto;
+    height:100%;
+    background-color: cornflowerblue;
+}
+
+.left{
+    top:-100%;
+    position:absolute;
+    width:100px;
+    background-color:pink;
+    height:100%;
+}
+.subCol{
+    float:left;
+    width: 40%;
+    height:80%;
+    margin: 5%; 
+    background-color:gray;
+}
