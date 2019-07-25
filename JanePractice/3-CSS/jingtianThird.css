@@ -1,6 +1,11 @@
+html{
+    height:100%;
+}
+
 body{
     height:100%;
 }
+
 #top{
     background-color: aquamarine;
     position: relative;
@@ -9,31 +14,32 @@ body{
     height:40px;
 }
 
-#full{
-    position: relative;
-    height:calc(100% - 5px);
-    margin: 5px 5px 5px 5px;
-    background-color: aqua;
-}
-
-#inside{
-    position: relative;
-    height:1000px;
-    width:30px;
-    border-color: bisque;
-}
-
 .row{
-    clear:both;
-    box-sizing:border-box;
+    height:calc(100% - 40px);
+    margin:10px;
    
 }
 .col{
-    float:left;
-    width:calc(90% / 3);
-    margin:calc(5% / 3);
-    background-color: cyan;
-    border:5px white;
+   display: inline-block;
     text-align: center;
     height:5000px;
+}
+
+#navi{
+    width:40px;
+    background-color: cornflowerblue;
+    margin:5px;
+}
+#changed{
+    float:right;
+    width: calc(100% - 80px);
+    border: 5px khaki;
+    clear:both;
+}
+.subCol{
+    float:left;
+    width: 40%;
+    height:80%;
+    margin: 5%; 
+    background-color:gray;
 }
