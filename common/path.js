@@ -1,11 +1,10 @@
 window.contextRoot=function(){}
 require.config(
     {
-        baseUrl: '',
+        baseUrl: '/',
         paths: {
-           // 基础模块配置
-           cls1:'../common/cls1',
-           WJTDlg:'../common/wjtdlg'
+           // basic modal 
+           WJTDlg:'common/dialog/wjtdlg'
          },
         waitSeconds: 0,
         shim: {

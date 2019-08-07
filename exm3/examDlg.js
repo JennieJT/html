@@ -1,10 +1,8 @@
 
-
-
 require(['WJTDlg'],function(Dlg){
     var dlg;
     function popDialog() {
-       dlg=new Dlg()
+       dlg=Dlg({id:'wjt_dlg'})
        dlg.modal('wjt_dlg')
     }
     var onload=function()

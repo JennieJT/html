@@ -1,0 +1,165 @@
+html{
+    height:100%;
+    width:100%;
+    overflow:hidden; 
+}
+body{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    font-size:1.5rem;
+}
+#top{
+    background-color: aquamarine;
+    position: relative;
+    left:0%;
+    right:0%;
+    height:40px;
+}
+
+.row{
+    height:calc(100% - 40px);
+    margin:10px;
+   
+}
+.col{
+    display: inline-block;
+    text-align: center;
+    height:5000px;
+}
+
+#navi{
+    width:40px;
+    background-color: cornflowerblue;
+    margin:5px;
+}
+#changed{
+    float:right;
+    width: calc(100% - 80px);
+    border: 5px khaki;
+    clear:both;
+}
+.subCol{
+    float:left;
+    width: 40%;
+    height:80%;
+    margin: 5%; 
+    background-color:gray;
+}
+.dialogBox{
+    position: absolute;
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    display: block;
+    background:rgba(18, 188, 230, 0.5);
+    z-index: 1000;
+    overflow:hidden;
+}
+.dialogBox:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.dialogBox >.dialogFrame{
+    color:rgb(129, 122, 122);
+    border:groove rgb(170, 191, 237);
+     position:relative;
+    /* top:calc(50% - 150px);
+    bottom:calc(50% - 150px);
+    left:calc(50% - 250px);
+    right:calc(50% - 250px); */
+    margin:0 auto;
+    margin-top:5%;
+    /* display: inline-block; */
+    /* text-align:center; */
+    height:400px;
+    width:400px;
+    background: rgb(224, 190, 212);
+    z-index:1001;
+     opacity:1; 
+    vertical-align: middle;
+  
+    
+}
+.dad{
+    height:100%;
+    overflow:auto;
+}
+.dialogFrame > .top{
+    position: relative;
+    display:inline-block;
+    width:100%;
+    height:2.5rem;
+    line-height: 2.5rem;
+    border-bottom:groove rgb(170, 191, 237);
+    background-color: rgb(224, 190, 212);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+} 
+.dialogFrame >.top >.left{
+    position: relative;
+    display:inline-block;
+    width:2rem;
+    margin-left:0.5rem;
+
+   
+    /* border-right: groove  rgb(170, 191, 237); */
+}
+.dialogFrame >.top >.title{
+    position:relative;
+    display:inline-block;
+    /* width:70%; */
+    /* border-right:groove rgb(170, 191, 237);  */
+}
+.dialogFrame >.top >.close{
+    /* width:10%; */
+    right:0%;
+    /* border-left:groove rgb(170, 25, 237); */
+    /* border-right:groove rgb(170, 25, 237); */
+    position:relative;
+    display:inline-block;
+    float:right;
+    margin-right:5%;
+}
+.dialogFrame > .bottom{
+    height:calc(100% - 2.5rem);
+}
+
+.dialogFrame > .bottom > .content{
+    position:relative;
+    height:88%;
+    border-bottom: groove rgb(170, 191, 237);
+}
+.dialogFrame > .bottom > .content > .innerContent{
+    height:100%;
+    width:96%;
+    background: rgb(170, 191, 237);
+    margin-left: 2%;
+    margin-right:2%;
+}
+.dialogFrame > .bottom > .button{
+    position:relative;
+    display:inline-block;
+    float:right;
+    /* width:90%; nooooooooo!!!!!*/ 
+    height:12%;
+    bottom:0%;
+    margin-right:5%;
+}
+
+.fa:hover {
+    color:rgb(197, 88, 121);
+    cursor: pointer;
+}
+
+.far:hover {
+    color:rgb(197, 88, 121);
+    cursor: pointer;
+}
+
+a:hover{
+   color:rgb(197, 88, 121);
+   cursor: pointer;
+}
